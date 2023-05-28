@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family= Montserrat:wght@400;700 & display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="caixa">
+      <img src="clinicaest.webp" alt="foto clinica" />
+      <h1>O que você encontra aqui</h1>
+      <p>
+        Nosso spar oferece uma variedade de serviços  para nossos clientes  se sentirem relaxados e rejuvenescidos, serviços como aromaterapia, sauna, banhos terapêuticos, yoga, massagens  relaxantes, terapêuticas, tratamentos faciais: que ajudam a limpar, tonificar, hidratar e rejuvenescer a pele, depilação  com  cera quente ou fria, depilação a laser ou eletrólise, serviços de manicure e pedicure ajudam a manter as mãos e os pés limpos e bem cuidados, tudo isso para seu bem estar e saúde. Venha agendar uma visita. 
+      </p>
+
+      <button class="contato" onclick="abrir()">Entrar em Contato</button>
+    </div>
+
+    <form action="https://formsubmit.co/carlacp1109@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Nome" />
+      <input type="email" name="email" required placeholder="Email" />
+      <textarea placeholder="Sua dúvida aqui"></textarea>
+      <button type="submit">Enviar</button>
+      <button onclick="fechar()" type="button" class="voltar">Voltar</button>
+    </form>
+  </body>
+  <script>
+
+    function abrir() {
+      document.querySelector("form").style.opacity = 1;
+	  document.querySelector("div").style.opacity = 0.3
+    }
+
+		function fechar() {
+			document.querySelector("form").style.opacity = 0;
+	  document.querySelector("div").style.opacity = 1
+
+		}
+  </script>
+</html>
